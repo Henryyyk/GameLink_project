@@ -1,4 +1,3 @@
 # GameLink_project
-Projeto universitário sobre um site de jogos.
 
-Teste de versão com GitHub
+A GameLink começou como um projeto pessoal de infancia o qual era chamado de Linking Games - um site de noticías. Hoje a GameLink continua sendo um projeto pessoal, mas também esta sendo usado para projetos universitarios.
