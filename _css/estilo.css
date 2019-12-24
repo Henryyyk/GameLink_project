@@ -3,18 +3,19 @@
     padding: 0;
 }
 
-header{
-    background-color: aquamarine;
+div#cabecalho{
+    background-color: #F19933;
     width: 100%;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
+    box-shadow: 7px 0 7px black;
 }
 
 h1#pageTitle{
-    color: black;
+    color: #484850;
     margin: 10px;
 }
 
@@ -34,10 +35,10 @@ h1#pageTitle{
 .barra{
     background-color: #333;
     height: 100%;
-    width: 300px;
-    position: absolute;
+    width: 200px;
+    position: fixed;
     transform: all .2 linear;
-    left: -300px;
+    left: -200px;
     top: 0;
 }
 
@@ -64,12 +65,12 @@ nav a{
 }
 
 .link:hover{
-    background-color: aquamarine;
+    background-color: #F19933;
     color: black;
 }
 
 #check:checked ~ .barra{
-    transform: translateX(300px);
+    transform: translateX(200px);
     transition: .2s;
 }
 
@@ -81,8 +82,8 @@ nav a{
 
 /* BODY */
 body{
-    background-color: #0A0E17;
-    color: #C8C8C8;
+    background-color: #F1F1F1;
+    color: #3E3E3E;
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
 }
@@ -92,11 +93,26 @@ main#container{
 }
 
 h2{
-    color: white;
+    color: #ED7233;
+    text-align: left;
+}
+
+hr{
+    margin: 5px;
 }
 
 p{
     margin: 10px 5px 10px 5px;
+}
+
+a:link{
+    text-decoration: none;
+    color: aqua;
+}
+
+a:visited{
+    text-decoration: none;
+    color: orange;
 }
 
 img.aImg{
@@ -109,10 +125,12 @@ img.aImg{
 footer#rodape{
     width: 100%;
     height: 80px;
-    background-color: aquamarine;
+    background-color: #F19933;
     text-align: center;
     padding: 10px 0 0 0;
+    position: absolute;
 }
+
 #rodape label{
     color: black;
 }
