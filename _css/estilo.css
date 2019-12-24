@@ -39,13 +39,14 @@ h1#pageTitle{
     position: fixed;
     transform: all .2 linear;
     left: -200px;
-    top: 0;
+    top: 52px;
 }
 
 nav{
     width: 100%;
     position: absolute;
-    top: 60px;
+    top: 2px;
+    border-top: 1px solid blacks;
 }
 
 nav a{
@@ -92,9 +93,14 @@ main#container{
     margin-top: 70px;
 }
 
+h1{
+    font-size: 1.7em;
+}
+
 h2{
     color: #ED7233;
     text-align: left;
+    font-size: 1.4em;
 }
 
 hr{
@@ -105,14 +111,13 @@ p{
     margin: 10px 5px 10px 5px;
 }
 
-a:link{
-    text-decoration: none;
-    color: aqua;
-}
-
-a:visited{
+a:link , a:visited{
     text-decoration: none;
     color: orange;
+}
+
+main#container a:hover{
+    text-decoration: underline;
 }
 
 img.aImg{
