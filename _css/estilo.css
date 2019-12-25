@@ -28,7 +28,7 @@ h1#pageTitle{
     padding: 15px;
     position: absolute;
     z-index: 1;
-    top: 0;
+    top: -3px;
     left: 0;
 }
 
@@ -143,4 +143,11 @@ footer#rodape{
 #rodape img{
     padding-top: 10px;
 }
-/* BreackPoint */
+
+.rodImg{
+    opacity: .5;
+}
+.rodImg:hover{
+    opacity: 1;
+    transition: .2s;
+}
