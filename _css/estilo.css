@@ -1,8 +1,10 @@
 * {
     margin: 0;
     padding: 0;
+    font-size: 1em;
 }
-
+/*----------------------------------------------------*/
+/* CABÇALHO */
 div#cabecalho{
     background-color: #F19933;
     width: 100%;
@@ -14,8 +16,12 @@ div#cabecalho{
     box-shadow: 7px 0 7px black;
 }
 
+div#hMenu{
+    display: none;
+}
+
 h1#pageTitle{
-    color: #484850;
+    color: black;
     margin: 10px;
 }
 
@@ -42,14 +48,13 @@ h1#pageTitle{
     top: 52px;
 }
 
-nav{
+nav#menu{
     width: 100%;
     position: absolute;
     top: 2px;
-    border-top: 1px solid blacks;
 }
 
-nav a{
+nav#menu a{
     text-decoration: none;
 }
 
@@ -81,6 +86,7 @@ nav a{
     transition-delay: .2s;
 }
 
+/*----------------------------------------------------*/
 /* BODY */
 body{
     background-color: #F1F1F1;
@@ -126,6 +132,8 @@ img.aImg{
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
+/*----------------------------------------------------*/
 /* RODAPÉ */
 footer#rodape{
     width: 100%;
@@ -150,4 +158,62 @@ footer#rodape{
 .rodImg:hover{
     opacity: 1;
     transition: .2s;
+}
+/*----------------------------------------------------*/
+/* BreakPoint - Tablet Version */
+@media only screen and (min-width:768px){
+    main#container{
+        margin: auto;
+        width: 75%;
+        margin-top: 70px;
+    }
+    img.aImg{
+        border-radius: 10px;
+    }
+}
+
+/*----------------------------------------------------*/
+/* BreakPoint - Desktop Version */
+@media only screen and (min-width:1024px){
+    main#container{
+        margin: auto;
+        width: 75%;
+        margin-top: 110px;
+    }
+
+    img.aImg{
+        border-radius: 10px;
+    }
+
+    #icone{
+        display: none;
+    }
+
+    div#hMenu{
+        display: block;
+    }
+
+    nav#dMenu{
+        background-color: #ED7233;
+        padding: 7px;
+    }
+
+    #dMenu li {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    #dMenu a{
+        font-size: 1.2em;
+        color: black;
+    }
+
+    #dMenu a:hover{
+        background-color: black;
+        color: #F19933;
+        padding: 7px;
+        border-radius: 20px;
+        transition: .2s;
+    }
+/*----------------------------------------------------*/
 }
