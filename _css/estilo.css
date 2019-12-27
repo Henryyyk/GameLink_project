@@ -14,6 +14,7 @@ div#cabecalho{
     top: 0;
     left: 0;
     box-shadow: 7px 0 7px black;
+    z-index: 999;
 }
 
 div#hMenu{
