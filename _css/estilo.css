@@ -143,6 +143,7 @@ footer#rodape{
     text-align: center;
     padding: 10px 0 0 0;
     position: absolute;
+    z-index: 999;
 }
 
 #rodape label{
