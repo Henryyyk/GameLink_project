@@ -4,48 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../../_lib/owlCarousel2/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="../../_lib/owlCarousel2/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="../../_css/estilo.css">
-    <script src="../../_lib/jquery/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/303e34b6db.js" crossorigin="anonymous"></script><!-- plugin icon -->
+    <link rel="stylesheet" href="../../_lib/owlCarousel2/dist/assets/owl.carousel.min.css"><!-- plugin carousel --> 
+    <link rel="stylesheet" href="../../_lib/owlCarousel2/dist/assets/owl.theme.default.min.css"><!-- plugin carousel --> 
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="../../_lib/owlCarousel2/dist/owl.carousel.min.js"></script>
     <script src="../../_script/scripts.js"></script>
     <title>GameLink</title>
 </head>
 <body>
-    <header>
-        <div id="cabecalho">
-            <h1 id="pageTitle">GameLink</h1>
-            <input type="checkbox" name="check" id="check">
-            <label for="check" id="icone"><img src="../../_imagens/icone_menu.png" alt="icone"></label>
-            <!-- Menus -->
-            <!--Mobile Version-->
-            <div class="barra">
-                <nav id="menu">
-                    <ul>
-                        <li><a href="../index.html"><div class="link">HOME</div></a></li>
-                        <li><a href="../_ps4/"><div class="link">PS4</div></a></li>
-                        <li><a href="../_xboxOne/"><div class="link">XBOX ONE</div></a></li>
-                        <li><a href="../_pc/"><div class="link">PC</div></a></li>
-                        <li><a href="../_switch/"><div class="link">SWITCH</div></a></li>
-                        <li><a href="aboutUs.html"><div class="link">SOBRE</div></a></li>
-                    </ul>   
-                </nav>  
+    <!-- header start -->
+    <header id="cabecalho">
+        <h1 id="pageTitle">GameLink</h1>
+        <!-- responsive menu with jquery -->
+        <nav id="menu">
+            <div class="toggle">
+                <i class="fas fa-bars menu"></i>
             </div>
-            <!--desktop version-->
-            <div id="hMenu">
-                <nav id="dMenu">
-                    <ul>
-                        <li><a href="../index.html">HOME</a></li>
-                        <li><a href="../_ps4/">PS4</a></li>
-                        <li><a href="../_xboxOne/">XBOX ONE</a></li>
-                        <li><a href="../_pc/">PC</a></li>
-                        <li><a href="../_switch/">SWITCH</a></li>
-                        <li><a href="aboutUs.html">SOBRE</a></li>
-                    </ul>   
-                </nav>  
-            </div>
+            <ul>
+                <li><a href="../_paginas/index.html">HOME</a></li>
+                <li><a href="../_ps4/">PS4</a></li>
+                <li><a href="../_xboxOne/">XBOX ONE</a></li>
+                <li><a href="../_pc/">PC</a></li>
+                <li><a href="../_switch/">SWITCH</a></li>
+                <li><a href="about/aboutUs.html">SOBRE</a></li>
+            </ul>   
+        </nav>            
     </header>
+    <!-- header end -->
     
     <!-- Sessão principal -->
     <main id="container">

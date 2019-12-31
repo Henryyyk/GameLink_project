@@ -4,50 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../../_lib/owlCarousel2/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="../../_lib/owlCarousel2/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="../../_css/estilo.css">
-    <script src="../../_lib/jquery/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/303e34b6db.js" crossorigin="anonymous"></script><!-- plugin icon -->
+    <link rel="stylesheet" href="../../_lib/owlCarousel2/dist/assets/owl.carousel.min.css"><!-- plugin carousel --> 
+    <link rel="stylesheet" href="../../_lib/owlCarousel2/dist/assets/owl.theme.default.min.css"><!-- plugin carousel --> 
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="../../_lib/owlCarousel2/dist/owl.carousel.min.js"></script>
     <script src="../../_script/scripts.js"></script>
     <title>GameLink</title>
 </head>
 <body>
     <!-- header start -->
-    <header>
-        <div id="cabecalho">
-            <h1 id="pageTitle">GameLink</h1>
-            <input type="checkbox" name="check" id="check">
-            <label for="check" id="icone"><img src="../../_imagens/icone_menu.png" alt="icone"></label>
-
-            <!-- Menus -->
-            <!--Mobile Version-->
-            <div class="barra">
-                <nav id="menu">
-                    <ul>
-                        <li><a href="index.html"><div class="link">HOME</div></a></li>
-                        <li><a href="../_ps4/"><div class="link">PS4</div></a></li>
-                        <li><a href="../_xboxOne/"><div class="link">XBOX ONE</div></a></li>
-                        <li><a href="../_pc/"><div class="link">PC</div></a></li>
-                        <li><a href="../_switch/"><div class="link">SWITCH</div></a></li>
-                        <li><a href="about/aboutUs.html"><div class="link">SOBRE</div></a></li>
-                    </ul>   
-                </nav>  
+    <header id="cabecalho">
+        <h1 id="pageTitle">GameLink</h1>
+        <!-- responsive menu with jquery -->
+        <nav id="menu">
+            <div class="toggle">
+                <i class="fas fa-bars menu"></i>
             </div>
-            
-            <!--desktop version-->
-            <div id="hMenu">
-                <nav id="dMenu">
-                    <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="../_ps4/">PS4</a></li>
-                        <li><a href="../_xboxOne/">XBOX ONE</a></li>
-                        <li><a href="../_pc/">PC</a></li>
-                        <li><a href="../_switch/">SWITCH</a></li>
-                        <li><a href="about/aboutUs.html">SOBRE</a></li>
-                    </ul>   
-                </nav>  
-            </div>
+            <ul>
+                <li><a href="../_paginas/index.html">HOME</a></li>
+                <li><a href="../_ps4/">PS4</a></li>
+                <li><a href="../_xboxOne/">XBOX ONE</a></li>
+                <li><a href="../_pc/">PC</a></li>
+                <li><a href="../_switch/">SWITCH</a></li>
+                <li><a href="about/aboutUs.html">SOBRE</a></li>
+            </ul>   
+        </nav>            
     </header>
     <!-- header end -->
 
@@ -59,9 +42,7 @@
             <div>
                 <figure class="fotoLegenda">
                     <a href="#"><img src="../_imagens/sw_fo.jpg" alt=""></a>
-                    <figcaption>
-                        <a href="#">Star Wars Fallen Order</a>
-                    </figcaption>
+                    <label for="#">Saiba mais sobre o novo jogo da série Star Wars<br><a href="#">Star Wars Fallen Order</a></label>
                 </figure>                  
             </div>                
         </section>
@@ -70,9 +51,7 @@
             <div>
                 <figure class="fotoLegenda">
                     <a href="#"><img src="../_imagens/cod_price.jpeg" alt=""></a>
-                    <figcaption>
-                        <a href="#">Call od Duty Modern Warfare (2019)</a>
-                    </figcaption>
+                    <label for="#">De volta as raizes, Call of Duty Modern Warfare está de volta!<br><a href="#">Call od Duty Modern Warfares</a></label>
                 </figure>                  
             </div>
         </section>
@@ -81,20 +60,16 @@
             <div>
                 <figure class="fotoLegenda">
                     <a href="#"><img src="../_imagens/fifa20_hazard.jpg" alt=""></a>
-                    <figcaption>
-                        <a href="#">Fifa 2020</a>
-                    </figcaption>
+                    <label for="#">Saiba mais sobre o novo jogo da série Star Wars<br><a href="#">Star Wars Fallen Order</a></label>
                 </figure>                  
             </div>
         </section>
         <hr>
         <aside id="sideBar">
-            <div>
                 <a href="#">link</a>
                 <a href="#">link</a>
                 <a href="#">link</a>
                 <a href="#">link</a>
-            </div>
         </aside>
      </main>
      <!-- main end -->

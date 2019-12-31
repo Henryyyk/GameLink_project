@@ -6,7 +6,7 @@
 }
 /*----------------------------------------------------*/
 /* CABÇALHO */
-div#cabecalho{
+header#cabecalho{
     background-color: #F19933;
     width: 100%;
     text-align: center;
@@ -14,12 +14,8 @@ div#cabecalho{
     position: fixed;
     top: 0;
     left: 0;
-    box-shadow: 7px 0 7px black;
     z-index: 10;
-}
-
-div#hMenu{
-    display: none;
+    border-bottom: 5px black solid;
 }
 
 h1#pageTitle{
@@ -27,65 +23,62 @@ h1#pageTitle{
     margin: 10px;
 }
 
-#check{
-    display: none;
-}
-
-#icone{
-    cursor: pointer;
-    padding: 15px;
-    position: absolute;
-    z-index: 1;
-    top: -3px;
-    left: 0;
-}
-
-.barra{
-    background-color: #333;
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    transform: all .2 linear;
-    left: -200px;
-    top: 52px;
-}
-
-nav#menu{
+#cabecalho nav {
     width: 100%;
-    position: absolute;
-    top: 2px;
 }
 
-nav#menu a{
-    text-decoration: none;
+#cabecalho ul{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
 }
 
-.link{
-    background-color: #494950;
-    padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2em;
-    transition: all .2s linear;
-    color: #f4f4f9;
-    border-bottom: 2px solid #222;
-    opacity: 0;
-    margin-top: 200px;
+#cabecalho ul li{
+    list-style: none;
+    display: inline-block; /* essa linha deixa o menu de desktop em linha */
+    padding: 10px;
 }
 
-.link:hover{
-    background-color: #F19933;
+#cabecalho ul li:hover{
+    color: white;
+    background-color: black;
+    margin: 0px;
+    transition: .3s;
+    border-radius: 20px;
+}
+
+#cabecalho a{
+    color: white;
+    display: block;
+}
+
+.toggle{
+    padding: 10px 20px;
+    text-align: left;
     color: black;
+    font-size: 30px;
+    top: 0;
+    position: absolute;
 }
 
-#check:checked ~ .barra{
-    transform: translateX(200px);
-    transition: .2s;
-}
+@media (max-width:1024px){
+    .toggle{
+        display: block;
+    }
 
-#check:checked ~ .barra nav a .link{
-    opacity: 1;
-    margin-top: 0;
-    transition-delay: .2s;
+    ul{
+        width: 100%;
+        display: none;
+    }
+
+    #cabecalho ul li{
+        display: block;
+        text-align: center;
+    }
+
+    .active{
+        display: block;
+    }
 }
 
 /*----------------------------------------------------*/
@@ -141,47 +134,29 @@ main#container a:hover{
 section.news{
     margin: auto;
     margin-bottom: 5px;
-    border: 1px solid black;
     width: 95%;
-    /*background-color: rgb(100, 223, 84);    */
     position: relative;
 }
 
 #container .fotoLegenda img{
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
+    width: 60%;
+    height: auto;
     border-radius: 15px;
 }
 
-figure.fotoLegenda figcaption {
-    opacity: 0;
+.news label{
     position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
+    padding: 10px;
+    margin: auto;
+    text-align: left;
 }
 
-figure.fotoLegenda figcaption:hover{
-    opacity: 1;
-    background-color: rgba(0, 0, 0, .5);
-    transition: .2s;
-    border-radius: 15px;
-    position: absolute;
-}
-
-aside#sideBar{
+aside{
     margin: auto;
     margin-bottom: 5px;
     border: 1px solid black;
     width: 95%;
     height: 200px;
-    background-color: rgb(75, 115, 226);
-}
-
-aside#sideBar a{
-
 }
 
 /*----------------------------------------------------*/
@@ -241,31 +216,8 @@ footer#rodape{
         display: none;
     }
 
-    div#hMenu{
-        display: block;
-    }
-
-    nav#dMenu{
-        background-color: #ED7233;
-        padding: 7px;
-    }
-
-    #dMenu li {
-        display: inline-block;
-        margin: 5px;
-    }
-
-    #dMenu a{
-        font-size: 1.2em;
-        color: black;
-    }
-
-    #dMenu a:hover{
-        background-color: black;
-        color: #F19933;
-        padding: 7px;
-        border-radius: 20px;
-        transition: .2s;
+    .toggle{
+        display: none;
     }
 /*----------------------------------------------------*/
 }
