@@ -152,11 +152,27 @@ section.news{
 }
 
 aside{
-    margin: auto;
+    margin: left;
     margin-bottom: 5px;
-    border: 1px solid black;
     width: 95%;
-    height: 200px;
+    padding: 10px;
+}
+
+#sideBar ul{
+    display: block;
+    margin: 10px 0 10px 0px;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+#sideBar ul li{
+    margin: 5px 0 5px 0;
+    width: 100%;
+    list-style: none;
+}
+
+#sideBar ul li:hover{
+    list-style: outside;
 }
 
 /*----------------------------------------------------*/
@@ -202,6 +218,29 @@ footer#rodape{
 /*----------------------------------------------------*/
 /* BreakPoint - Desktop Version */
 @media only screen and (min-width:1024px){
+    /*----------------------------------------------------*/
+    /* HEADER */
+    #icone{
+        display: none;
+    }
+
+    .toggle{
+        display: none;
+    }
+
+    #cabecalho ul li:hover{
+        color: white;
+        background-color: black;
+        margin: 0px;
+        transition: .3s;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    /*----------------------------------------------------*/
+    /* BODY */
     main#container{
         margin: auto;
         width: 75%;
@@ -212,12 +251,69 @@ footer#rodape{
         border-radius: 10px;
     }
 
-    #icone{
+    /*----------------------------------------------------*/
+    /* CONTEUDO */
+
+    section.news{
+        margin: auto;
+        margin-bottom: 5px;
+        width: 33%;
+        position: relative;
+        float: left;
+    }
+    
+    hr{
         display: none;
     }
+    a{
+        margin: 0;
+        padding:0;
+    }
+    
+    #container .fotoLegenda img{
+        width: 98%;
+        height: auto;
+        border-radius: 15px;
+        opacity: 1;
+    }
 
-    .toggle{
-        display: none;
+    .news label{
+        left: 0;
+        bottom: -1;
+        color: black;
+    }
+
+    /* ----------------------- TRABALHAR NO ASIDE ---------------------- */
+    aside{
+        width: 30%;
+        position: relative;
+        top: 25px;
+        bottom: 0;
+        float: right;
+        border-left: 1px solid black;
+    }
+    
+    div.sideBarContent{
+        top: 50px;
+        position: static;
+    }
+
+    #sideBar ul{
+        display: block;
+        margin: 10px 0 10px 0px;
+        font-size: 1.2em;
+        text-align: left;
+    }
+    
+    #sideBar ul li{
+        margin: 5px 0 5px 0;
+        width: 100%;
+        list-style: none;
+    }
+
+    footer#rodape{
+        top: 25px;
+        position: relative;
     }
 /*----------------------------------------------------*/
 }
