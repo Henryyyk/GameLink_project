@@ -1,85 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head> 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../../_css/estilo.css">
-    <script src="https://kit.fontawesome.com/303e34b6db.js" crossorigin="anonymous"></script><!-- plugin icon -->
-    <link rel="stylesheet" href="../../_lib/owlCarousel2/dist/assets/owl.carousel.min.css"><!-- plugin carousel --> 
-    <link rel="stylesheet" href="../../_lib/owlCarousel2/dist/assets/owl.theme.default.min.css"><!-- plugin carousel --> 
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="../../_lib/owlCarousel2/dist/owl.carousel.min.js"></script>
-    <script src="../../_script/scripts.js"></script>
-    <title>GameLink</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Document</title>
 </head>
 <body>
     <!-- header start -->
-    <header id="cabecalho">
-        <h1 id="pageTitle">GameLink</h1>
-        <!-- responsive menu with jquery -->
-        <nav id="menu">
-            <div class="toggle">
-                <i class="fas fa-bars menu"></i>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            
+            <a href="index.html" class="navbar-brand h1 mb-0"><img src="_imagens/gamepad-24px.svg" class="mr-1">GameLink</a>
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSite"><!-- menu principal do site-->
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">NOTICIAS</a></li>
+                <!-- menu dropdown -->
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navDrop">PLATAFORMAS</a> <!-- titulo do dropdwon-->
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">PS4</a>
+                            <a href="#" class="dropdown-item">Xbox One</a>
+                            <a href="#" class="dropdown-item">PC</a>
+                        </div>
+                    </li>
+                </ul>                
+                <li class="nav-item"><a href="aboutUs.html" class="nav-link">SOBRE-NÓS</a></li>
+                </ul>                               
             </div>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="ps4/">PS4</a></li>
-                <li><a href="xboxOne/">XBOX ONE</a></li>
-                <li><a href="pc/">PC</a></li>
-                <li><a href="switch/">SWITCH</a></li>
-                <li><a href="aboutUs.html">SOBRE</a></li>
-            </ul>   
-        </nav>            
-    </header>
+
+            <!-- ferramenta de busca -->
+            <form class="form-inline">
+                <input class="form-control" type="search" id="searchBtn" placeholder="Buscar...">
+                <button class="btn btn-success ml-1" type="Submit" id="searchBtn">
+                    <img src="_imagens/search-icon-24px.svg" alt="icone de buscar">
+                </button>
+            </form>
+        </div>        
+    </nav>            
     <!-- header end -->
 
     <!-- main start -->
-    <main id="container">
-        <h1>HOME</h1>
+    <main>
+        <div class="container"> <!-- container start-->
+            <!-- main carousel / resolução do carousel *(1280px/520px) -->
+            <div id="mainCarousel" class="casousel slide" data-ride="carousel">
+                <!-- indicador de qual slide vc esta -->
+                <ol class="carousel-indicators">
+                    <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#mainCarousel" data-slide-to="1"></li>
+                    <li data-target="#mainCarousel" data-slide-to="2"></li>
+                </ol>
 
-        <section class="news">
-                <figure class="fotoLegenda">
-                    <a href="#"><img src="../_imagens/sw_fo.jpg" alt=""></a>
-                    <label for="img">Saiba mais sobre o novo jogo da série Star Wars.<br><a href="#">Star Wars Fallen Order</a></label>
-                </figure>                                
-        </section>
-        <hr>
-        <section class="news">
-                <figure class="fotoLegenda">
-                    <a href="#"><img src="../_imagens/cod_price.jpeg" alt=""></a>
-                    <label for="#">De volta as raizes, Call of Duty Modern Warfare está de volta!<br><a href="#">Call od Duty Modern Warfares</a></label>
-                </figure>                  
-        </section>
-        <hr>
-        <section class="news">
-                <figure class="fotoLegenda">
-                    <a href="#"><img src="../_imagens/fifa20_hazard.jpg" alt=""></a>
-                    <label for="#">Chega o lançamento do novo FIFA, confira as novidades<br><a href="#">FIFA 2020</a></label>
-                </figure>                  
-        </section>
-        <hr>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="_imagens/carousel-img1.jpg" class="d-block">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="_imagens/carousel-img2.jpg" class="d-block">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="_imagens/carousel-img3.jpeg" class="d-block">
+                    </div>
+                </div>     
+                <!-- Controles de proximo e anterior do carousel -->
+                <a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
 
-        <aside id="sideBar">
-            <div class="sideBarContent">
-                <h2>Leia também:</h2>
-                <ul>
-                    <li><a href="#">Review de Death Stranding</a></li>
-                    <li><a href="#">The Game Awards 2019</a></li>
-                    <li><a href="#">Trailer de Ghost of Tsushima</a></li>
-                    <li><a href="#">Fã cria versão de 'Toss A Coin To Your Witcher' para Beat Saber</a></li>
-                </ul>
-            </div>
-        </aside>
-     </main>
-     <!-- main end -->
+                <a class="carousel-control-next" href="#mainCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="sr-only">Proximo</span>
+                </a>    
+                    
+            </div><!-- main carousel end -->       
+            
+        </div><!-- container end -->
+        
+    </main><!-- main end -->
+    
 
-     <!-- footer start -->
-     <footer id="rodape">
-         <label>Site by Henrique dos Santos</label><br>
-         <a href="https://www.instagram.com/_henrique.jpg/" target="_blank"><img class="rodImg" src="../../_imagens/insta_preto_logo_pequeno.png"></a>
-         <a href="https://github.com/henryyyk" target="_blank"><img class="rodImg" src="../../_imagens/git_logo_short_25x25.png"></a>
-     </footer> 
-     <!-- footer end -->
+    <!-- footer start -->
+    <footer>
+        
+    </footer> 
+    <!-- footer end -->
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="../../_script/scripts.js"></script>
+    <!-- scripts end -->
 </body>
 </html>
