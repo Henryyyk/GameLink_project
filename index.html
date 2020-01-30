@@ -1,143 +1,200 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="_css/style.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="img/GameLink_icon_68x68.png" type="image/x-png"/>
+    <!-- style start -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <!-- style start -->
+    <title>GameLink</title>
 </head>
 <body>
-    <header>
-        <!-- header start -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                
-                <a href="index.html" class="navbar-brand h1 mb-0"><img src="_imagens/gamepad-24px.svg" class="mr-1">GameLink</a>
-        
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <div class="collapse navbar-collapse" id="navbarSite"><!-- menu principal do site-->
-                    <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">NOTICIAS</a></li>
-                    <!-- menu dropdown -->
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navDrop">PLATAFORMAS</a> <!-- titulo do dropdwon-->
-                            <div class="dropdown-menu">
-                                <a href="#" class="dropdown-item">PS4</a>
-                                <a href="#" class="dropdown-item">Xbox One</a>
-                                <a href="#" class="dropdown-item">PC</a>
-                            </div>
-                        </li>
-                    </ul>                
-                    <li class="nav-item"><a href="aboutUs.html" class="nav-link">SOBRE-NÓS</a></li>
-                    </ul>                               
-                </div>
+    <header><!-- header start -->
 
-                <!-- ferramenta de busca -->
-                <form class="form-inline">
-                    <input class="form-control" type="search" id="searchBtn" placeholder="Buscar...">
-                    <button class="btn btn-success ml-1" type="Submit">
-                        <img src="_imagens/search-icon-24px.svg" alt="icone de buscar">
-                    </button>
-                </form>
-            </div>        
-        </nav>
-        <img src="_imagens/background.jpg" style="width: 100%;height: auto;" class="backgroundIMG">
-    </header>            
-    <!-- header end -->
+        <nav><!-- nav start -->
 
-    <!-- main start -->
-    <main>
-        <div class="container col-sx-12"><!-- carouselPrincipal start / resolução do carousel *(1280px/520px) -->
-            <div id="carouselPrincipal" class="carousel slide mb-3" data-ride="carousel">
-                <!-- indicador de qual slide vc esta -->
+                <div class="navbar navbar-expand-lg navbar-dark bg-dark"><!-- navbar start -->
+
+                    <div class="container"><!-- nav-container start -->
+
+                        <a href="index.html" class="navbar-brand"><img src="img/GameLink_icon_68x68.png" class="mb-1" style="width: 48px; height: 48px;" alt=""> GameLink</a>
+                        
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarPrincipal" aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Toggle navgation">                        
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarPrincipal">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">NOVIDADES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">ANÁLISES</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" id="ddNavPrincipal" role="button" data-toggle="dropdown">PLATAFORMAS</a>
+                                    <div class="dropdown-menu" aria-labelledby="ddNavPrincipal">
+                                        <a href="#" class="dropdown-item">PS4</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a href="#" class="dropdown-item">Xbox One</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a href="#" class="dropdown-item">PC</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a href="#" class="dropdown-item">Swith</a>
+                                    </div>
+                                </li>
+                                <div class="d-lg-none">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">LOGIN</a>
+                                </li>
+                                </div>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">SOBRE</a>
+                                </li>
+                            </ul>
+                            
+                            <form class="form-inline my-2 my-lg-0">
+                                <button class="btn btn-outline-success mr-sm-2 d-none d-lg-block"><i class="far fa-user-circle"></i>Login</button>
+                                <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button> 
+                            </form>
+                        </div>
+
+                    </div><!-- nav-container end -->
+                    
+                </div><!-- navbar end-->     
+            
+        </nav><!-- nav end -->      
+
+        <img src="img/background.jpg" alt="background image" style="width: 100%; height: auto; position: absolute;">
+
+    </header><!-- header start -->
+    
+    <main><!-- main start -->
+
+        <div class="container-sm-fluid mt-sm-3 container-md mt-md-3"><!-- container carousel start -->
+
+            <div class="carousel slide" data-ride="carousel" id="carouselPrincipal"><!-- carousel start -->            
+
                 <ol class="carousel-indicators">
                     <li data-target="#carouselPrincipal" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselPrincipal" data-slide-to="1"></li>
                     <li data-target="#carouselPrincipal" data-slide-to="2"></li>
+                    <li data-target="#carouselPrincipal" data-slide-to="3"></li>
                 </ol>
-                <div class="carousel-inner rounded mt-4">
+
+                <!-- resolução das imagens usadas no carousel 1200px x 600px -->            
+                <div class="carousel-inner rounded-lg">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="_imagens/carousel-img1.jpg" alt="Primeiro Slide">
+                        <img src="img/carouselPrincipal/call-of-duty-modern-warfare.jpeg" alt="slide 1" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h5>Final da Season 1</h5>
+                            <p>Season 1 de Call of Duty Modern Warfarer está no fim, quais serão as novidades para a season 2?</p>
+                        </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="_imagens/carousel-img2.jpg" alt="Segundo Slide">
+                        <img src="img/carouselPrincipal/halo_6_infinite.jpeg" alt="slide 2" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h5>Halo 6 Infinite</h5>
+                            <p>Halo Infinite será 'muito maior' do que outros</p>
+                        </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="_imagens/carousel-img3.jpeg" alt="Terceiro Slide">
+                        <img src="img/carouselPrincipal/final_fantasy_7.jpg" alt="slide 3" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h5>Final Fantasy 7</h5>
+                            <p>Ganha data de lançamento!</p>
+                        </div>
                     </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselPrincipal" role="button" data-slide="prev">
+                    <div class="carousel-item">
+                        <img src="img/carouselPrincipal/cyberpunk2077.png" alt="slide 4" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h5>Cyberpunk 2077</h5>
+                            <p>Adiado para setembro :(</p>
+                        </div>
+                    </div>
+                </div>    
+
+                <a href="#carouselPrincipal" class="carousel-control-prev" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Anterior</span>
                 </a>
-                <a class="carousel-control-next" href="#carouselPrincipal" role="button" data-slide="next">
+
+                <a href="#carouselPrincipal" class="carousel-control-next" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Próximo</span>
-                </a>    
-            </div><!-- carouselPrincipal end -->   
+                    <span class="sr-only">Proximo</span>
+                </a>
 
-            <!-- Conteudo principal -->
-            <div class="container">
-                <h2 class="mb-3">Novidades</h2><!-- a cada 3 noticias pequenas uma noticia grande -->
-                <div class="verticalNews">
-
-                    <article class="news-vertical-item"><!-- small news -->
-                        <div class="col col-lg-8">
-                            <div class="thambImg">
-                                <img src="_imagens/ps5-logo.jpg" class="rounded mb-3 mr-3 float-left">
-                            </div>
-                            <div class="thambData">
-                                <a href="#">Aenean fermentum iaculis turpis vel faucibus. Aliquam erat volutpat. Cras finibus vitae sapien in convallis. In imperdiet finibus neque</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="news-vertical-item"><!-- small news -->
-                        <div class="col-8">
-                            <div class="thambImg">
-                                <img src="_imagens/ps5-logo.jpg" class="rounded mb-3 mr-3 float-left">
-                            </div>
-                            <div class="thambData">
-                                <a href="#">Aenean fermentum iaculis turpis vel faucibus. Aliquam erat volutpat. Cras finibus vitae sapien in convallis. In imperdiet finibus neque</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="news-vertical-item"><!-- small news -->
-                        <div class="col-8">
-                            <div class="thambImg">
-                                <img src="_imagens/ps5-logo.jpg" class="rounded mb-3 mr-3 float-left">
-                            </div>
-                            <div class="thambData">
-                                <a href="#">Aenean fermentum iaculis turpis vel faucibus. Aliquam erat volutpat. Cras finibus vitae sapien in convallis. In imperdiet finibus neque</a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
+            </div><!-- carousel end -->    
             
-        </div><!-- container end -->
-    </main><!-- main end -->
-    
-
-    <!-- footer start -->
-    <footer>
+        </div><!-- container carousel end -->   
         
-    </footer> 
-    <!-- footer end -->
+        <div class="container-sm-fluid mt-sm-3 container-md"><!-- conteudo principal start -->
 
-    <!-- scripts -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="../../_script/scripts.js"></script>
+            <h2 class="my-3">Novidades</h2><!-- a cada 3 noticias pequenas uma noticia grande -->
+
+            <div class="verticalNews">
+                <!-- fazer redimencionamento das img com sass ou APIs de JS -->
+                <article class="noticias-vertical">
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-8">
+                            <div class="thambImg">
+                                <img src="img/conteudoPrincipal/ps5-logo.jpg" class="rounded mb-3 mr-3 float-left">
+                            </div>
+                            <div class="thambData">
+                                <a href="#" >Aenean fermentum iaculis turpis vel faucibus. Aliquam erat volutpat. Cras finibus vitae sapien in convallis. In imperdiet finibus neque</a>
+                            </div>
+                        </div>
+                    </div>                    
+                </article>
+                
+                <article class="noticias-vertical">
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-8">
+                            <div class="thambImg">
+                                <img src="img/conteudoPrincipal/ps5-logo.jpg" class="rounded mb-3 mr-3 float-left">
+                            </div>
+                            <div class="thambData">
+                                <a href="#" >Aenean fermentum iaculis turpis vel faucibus. Aliquam erat volutpat. Cras finibus vitae sapien in convallis. In imperdiet finibus neque</a>
+                            </div>
+                        </div>
+                    </div>                    
+                </article>
+
+                <article class="noticias-vertical">
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-8">
+                            <div class="thambImg">
+                                <img src="img/conteudoPrincipal/ps5-logo.jpg" class="rounded mb-3 mr-3 float-left">
+                            </div>
+                            <div class="thambData">
+                                <a href="#" >Aenean fermentum iaculis turpis vel faucibus. Aliquam erat volutpat. Cras finibus vitae sapien in convallis. In imperdiet finibus neque</a>
+                            </div>
+                        </div>
+                    </div>                    
+                </article>
+
+                <article class="big-news-vertical-item">
+                    <div class="row">
+                        <div class="col-12 col-lg-8">
+                            <div class="thambImg">
+                                <img class="rounded mb-3" src="img/conteudoPrincipal/fifa20_hazard.jpg" style="width: 100%;height: auto;">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+        </div><!-- conteudo principal start -->      
+        
+    </main><!-- main end -->
+
+    <!-- scripts start -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <!-- scripts end -->
 </body>
 </html>
