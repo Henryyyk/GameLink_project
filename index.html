@@ -19,7 +19,7 @@
 
                 <div class="navbar navbar-expand-lg navbar-dark bg-dark"><!-- navbar start -->
 
-                    <div class="container"><!-- nav-container start -->
+                    <div class="container-sm-fluid container-md"><!-- nav-container start -->
 
                         <a href="index.html" class="navbar-brand"><img src="img/GameLink_icon_68x68.png" class="mb-1" style="width: 48px; height: 48px;" alt=""> GameLink</a>
                         
@@ -30,13 +30,13 @@
                         <div class="collapse navbar-collapse" id="navbarPrincipal">
                             <ul class="navbar-nav mr-auto">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">NOVIDADES</a>
+                                    <a href="#" class="nav-link bg-dark text-white">NOVIDADES</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">ANÁLISES</a>
+                                    <a href="#" class="nav-link bg-dark text-white">ANÁLISES</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" id="ddNavPrincipal" role="button" data-toggle="dropdown">PLATAFORMAS</a>
+                                    <a href="#" class="nav-link bg-dark text-white dropdown-toggle" id="ddNavPrincipal" role="button" data-toggle="dropdown">PLATAFORMAS</a>
                                     <div class="dropdown-menu" aria-labelledby="ddNavPrincipal">
                                         <a href="#" class="dropdown-item">PS4</a>
                                         <div class="dropdown-divider"></div>
@@ -44,16 +44,16 @@
                                         <div class="dropdown-divider"></div>
                                         <a href="#" class="dropdown-item">PC</a>
                                         <div class="dropdown-divider"></div>
-                                        <a href="#" class="dropdown-item">Swith</a>
+                                        <a href="#" class="dropdown-item">Switch</a>
                                     </div>
                                 </li>
                                 <div class="d-lg-none">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">LOGIN</a>
+                                    <a href="#" class="nav-link bg-dark text-white">LOGIN</a>
                                 </li>
                                 </div>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">SOBRE</a>
+                                    <a href="#" class="nav-link bg-dark text-white">SOBRE</a>
                                 </li>
                             </ul>
                             
@@ -135,63 +135,124 @@
         
         <div class="container-sm-fluid mt-sm-3 container-md"><!-- conteudo principal start -->
 
-            <h2 class="my-3">Novidades</h2><!-- a cada 3 noticias pequenas uma noticia grande -->
+            <div class="row">
 
-            <div class="verticalNews">
-                <!-- fazer redimencionamento das img com sass ou APIs de JS -->
-                <article class="noticias-vertical">
-                    <div class="row">
-                        <div class="col-sm-12 col-lg-8">
-                            <div class="thambImg">
-                                <img src="img/conteudoPrincipal/ps5-logo.jpg" class="rounded mb-3 mr-3 float-left">
-                            </div>
-                            <div class="thambData">
-                                <a href="#" >Aenean fermentum iaculis turpis vel faucibus. Aliquam erat volutpat. Cras finibus vitae sapien in convallis. In imperdiet finibus neque</a>
-                            </div>
-                        </div>
-                    </div>                    
-                </article>
-                
-                <article class="noticias-vertical">
-                    <div class="row">
-                        <div class="col-sm-12 col-lg-8">
-                            <div class="thambImg">
-                                <img src="img/conteudoPrincipal/ps5-logo.jpg" class="rounded mb-3 mr-3 float-left">
-                            </div>
-                            <div class="thambData">
-                                <a href="#" >Aenean fermentum iaculis turpis vel faucibus. Aliquam erat volutpat. Cras finibus vitae sapien in convallis. In imperdiet finibus neque</a>
-                            </div>
-                        </div>
-                    </div>                    
-                </article>
+                <div class="col-sm-12 col-lg-8">
 
-                <article class="noticias-vertical">
-                    <div class="row">
-                        <div class="col-sm-12 col-lg-8">
-                            <div class="thambImg">
-                                <img src="img/conteudoPrincipal/ps5-logo.jpg" class="rounded mb-3 mr-3 float-left">
-                            </div>
-                            <div class="thambData">
-                                <a href="#" >Aenean fermentum iaculis turpis vel faucibus. Aliquam erat volutpat. Cras finibus vitae sapien in convallis. In imperdiet finibus neque</a>
-                            </div>
-                        </div>
-                    </div>                    
-                </article>
+                    <h2 class="my-3">NOVIDADES</h2><!-- a cada 3 noticias pequenas uma noticia grande -->
 
-                <article class="big-news-vertical-item">
-                    <div class="row">
-                        <div class="col-12 col-lg-8">
-                            <div class="thambImg">
-                                <img class="rounded mb-3" src="img/conteudoPrincipal/fifa20_hazard.jpg" style="width: 100%;height: auto;">
-                            </div>
-                        </div>
-                    </div>
-                </article>
+                    <div class="verticalNews"><!-- verticalNews start -->
+                        <!-- fazer redimencionamento das img com sass ou APIs de JS -->
+                        <article class="noticias-vertical">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="thambImg">
+                                        <img src="img/conteudoPrincipal/ps5-logo.jpg" class="rounded mb-3 mr-3 float-left">
+                                    </div>
+                                    <div class="thambData">
+                                        <a href="#" >Aenean fermentum iaculis turpis vel faucibus. Aliquam erat volutpat. Cras finibus vitae sapien in convallis. In imperdiet finibus neque</a>
+                                    </div>
+                                </div>
+                            </div>                    
+                        </article>
+                        
+                        <article class="noticias-vertical">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="thambImg">
+                                        <img src="img/conteudoPrincipal/ps5-logo.jpg" class="rounded mb-3 mr-3 float-left">
+                                    </div>
+                                    <div class="thambData">
+                                        <a href="#" >Aenean fermentum iaculis turpis vel faucibus. Aliquam erat volutpat. Cras finibus vitae sapien in convallis. In imperdiet finibus neque</a>
+                                    </div>
+                                </div>
+                            </div>                    
+                        </article>
 
-        </div><!-- conteudo principal start -->      
+                        <article class="noticias-vertical">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="thambImg">
+                                        <img src="img/conteudoPrincipal/ps5-logo.jpg" class="rounded mb-3 mr-3 float-left">
+                                    </div>
+                                    <div class="thambData">
+                                        <a href="#" >Aenean fermentum iaculis turpis vel faucibus. Aliquam erat volutpat. Cras finibus vitae sapien in convallis. In imperdiet finibus neque</a>
+                                    </div>
+                                </div>
+                            </div>                    
+                        </article>
+
+                        <article class="big-news-vertical-item">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="thambImg">
+                                        <img class="rounded mb-3" src="img/conteudoPrincipal/fifa20_hazard.jpg" style="width: 100%;height: auto;">
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div><!-- verticalNews end -->
+
+                </div>
+
+                <div class="col-sm-12 col-lg-4 aside">
+                    <aside>
+                        
+                        <h2 class="my-3">PLATAFORMAS</h2>
+                        <div class="list-group text-center">
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">PS4</a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">XBOX ONE</a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">PC</a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">SWITCH</a>
+                        </div>
+
+                        <h2 class="my-3">POPULARES</h2>
+                        <div class="row ">
+                            <div class="col-5">
+                                <img src="img/conteudoPrincipal/ps5-logo.jpg" class="rounded mb-3 mr-3 float-left" style="width: 100%;" height="auto">
+                            </div>
+                            <div class="col-7">
+                                <a href="#">SONY DIIVULGA NOVO LOGO DO PS5</a>
+                            </div>                            
+                        </div>
+
+                        <div class="row ">
+                            <div class="col-5">
+                                <img src="img/conteudoPrincipal/ps5-logo.jpg" class="rounded mb-3 mr-3 float-left" style="width: 100%;" height="auto">
+                            </div>
+                            <div class="col-7">
+                                <a href="#">SONY DIIVULGA NOVO LOGO DO PS5</a>
+                            </div>                            
+                        </div>
+
+                        <div class="row ">
+                            <div class="col-5">
+                                <img src="img/conteudoPrincipal/ps5-logo.jpg" class="rounded mb-3 mr-3 float-left" style="width: 100%;" height="auto">
+                            </div>
+                            <div class="col-7">
+                                <a href="#">SONY DIIVULGA NOVO LOGO DO PS5</a>
+                            </div>                            
+                        </div>
+
+                        <div class="row ">
+                            <div class="col-5">
+                                <img src="img/conteudoPrincipal/ps5-logo.jpg" class="rounded mb-3 mr-3 float-left" style="width: 100%;" height="auto">
+                            </div>
+                            <div class="col-7">
+                                <a href="#">SONY DIIVULGA NOVO LOGO DO PS5</a>
+                            </div>                            
+                        </div>
+
+                    </aside>
+                </div>
+
+            </div>     
+
+        </div><!-- conteudo principal end -->      
         
     </main><!-- main end -->
-
+    
     <!-- scripts start -->
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/popper.js/dist/popper.js"></script>
