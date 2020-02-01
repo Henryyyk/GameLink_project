@@ -1,4 +1,6 @@
-.sideNews{
-    height: 10px;
-    background-color: blue;
-}
+.videoScroll {
+    position: relative;
+    overflow: auto;
+    height: 360px;
+    width: 100%;
+  }
