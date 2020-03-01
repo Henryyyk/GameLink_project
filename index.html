@@ -28,61 +28,50 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
-                        <div class="collapse navbar-collapse" id="navbarPrincipal">
+                        <div class="collapse navbar-collapse" id="navbarPrincipal"><!-- collapse start-->
+
                             <ul class="navbar-nav mr-auto">
+
                                 <li class="nav-item">
                                     <a href="#" class="nav-link bg-dark text-white">NOVIDADES</a>
-                                </li>
+                                </li>                                
                                 <li class="nav-item">
                                     <a href="#" class="nav-link bg-dark text-white">ANÁLISES</a>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a href="#" class="nav-link bg-dark text-white dropdown-toggle" id="ddNavPrincipal" role="button" data-toggle="dropdown">PLATAFORMAS</a>
-                                    <div class="dropdown-menu" aria-labelledby="ddNavPrincipal">
-                                        <a href="#" class="dropdown-item">PS4</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a href="#" class="dropdown-item">Xbox One</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a href="#" class="dropdown-item">PC</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a href="#" class="dropdown-item">Switch</a>
-                                    </div>
-                                </li>
-                                <div class="d-lg-none">
-                                <li class="nav-item">
-                                    <a href="login.html" class="nav-link bg-dark text-white">LOGIN</a>
-                                </li>
-                                </div>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link bg-dark text-white">SOBRE</a>
-                                </li>
-                            </ul>
+                                </li>                                    
+                                <li class="nav-item d-md-block d-lg-none">
+                                    <a href="#" class="nav-link bg-dark text-white">LOGIN</a>
+                                </li>                                
+                            </ul>    
+
+                            <form class="form-inline my-2 my-lg-0">                                                            
+                                <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search">
+                                <button class="btn btn-outline-warning my-2 my-sm-0 mr-sm-2" type="submit">
+                                    <i class="fas fa-search"></i>
+                                </button> 
+                            </form>                                                
+                        </div><!-- collapse end-->
                             
-                            <!-- dropdown login LG only -->
-                            <div class="dropdown">
-                                <!-- btn login config -->
-                                <button class="btn btn-outline-warning mr-sm-2 d-none d-lg-block" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="dropdown">                                
+                                <button class="btn btn-warning mr-sm-2 d-none d-lg-block" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="far fa-user-circle"></i> Login
                                 </button>
-
-                                <!-- form login config -->
                                 <div class="dropdown-menu">
                                     <form class="px-4 py-3">
-
                                         <div class="form-group">
                                             <label for="username">
                                                 Usuário
                                             </label>
                                             <input type="email" class="form-control" id="username" placeholder="email@email.com">
                                         </div>
-
                                         <div class="form-group">
                                             <label for="password">
                                                 Senha
                                             </label>
                                             <input type="password" class="form-control" id="password" placeholder="Senha">
                                         </div>
-
                                         <div class="form-group">
                                             <div class="form-check">
                                                 <input type="checkbox" class="form-check-input" id="keeplog">
@@ -91,7 +80,6 @@
                                                 </label>
                                             </div>                                            
                                         </div>
-
                                         <button type="submit" class="btn btn-warning">
                                             login
                                         </button>
@@ -102,19 +90,47 @@
                                     <a href="#" class="dropdown-item">Esqueceu sua senha?</a>
                                 </div>
                             </div>
-
-                            <form class="form-inline my-2 my-lg-0">                                                            
-                                <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search">
-                                <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">
-                                    <i class="fas fa-search"></i>
-                                </button> 
-                            </form>
+                            
                         </div>
 
                     </div><!-- nav-container end -->
                     
-                </div><!-- navbar end-->     
-            
+                    <!-- Menu plataformar LG only -->
+                    <div class="container navbar pl-5 py-1 navbar-expand-lg d-sm-none d-lg-block">
+                        <ul class="navbar-nav text-dark">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">PS4</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">XBOX ONE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">PC</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">NINTENDO SWITCH</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">PS3</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">XBOX 360</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">3DS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">PS VITA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">WII U</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+
+                </div><!-- navbar end-->   
+                
         </nav><!-- nav end -->      
 
         <img src="img/background.jpg" alt="background image" style="width: 100%; height: auto; position: absolute;">
