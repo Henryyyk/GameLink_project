@@ -4,3 +4,19 @@
     height: 360px;
     width: 100%;
 }
+
+#glFooterLogo{
+    filter: grayscale(1);
+    transition: .2s;
+    &:hover {
+        transition: .2s;
+        filter: grayscale(0);
+    }
+}
+
+a {
+    transition: .2s;
+    &:hover {
+        transition: .2s;
+    }
+}
