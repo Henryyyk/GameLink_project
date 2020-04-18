@@ -30,15 +30,23 @@ a {
     }
 }
 
-/* ----------- login.html style ----------- */
+.siteby{
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+}
+
+/* ----------- login style ----------- */
 .login-page{
-    background: url(../../img/login_page_background.jpg) no-repeat center center fixed;
+    background: url(../../img/login_page_wallpaper.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
 .main-login-section{
     margin: 0 auto;
     margin-top: 130px;
+    h1{
+        font-size: 2em;
+        padding-bottom: 10px;
+    }
 }
 
 .modal-content{
@@ -50,23 +58,21 @@ a {
 .login-gl-logo{
     margin-top: -50px;
     margin-bottom: 30px;
-}
-
-.login-gl-logo img{
-    height: 100px;
-    width: 100px;
+    img{
+        height: 100px;
+        width: 100px;
+    }
 }
 
 .login-form{
     margin-bottom: 25px;
-}
-
-.login-form input{
-    height: 42px;
-    border-radius: 5px;
-    border-color: orange;
-    font-size: 18px;
-    padding-left: 45px;
+    input{
+        height: 42px;
+        border-radius: 5px;
+        border-color: orange;
+        font-size: 18px;
+        padding-left: 45px;
+    }
 }
 
 .login-form::before{
@@ -82,7 +88,7 @@ a {
     content: "\f023";
 }
 
-.login-btn{
+.padrão-btn{
     font-size: 20px;
     margin: 5px 0 25px;
     border-radius: 15px;
@@ -92,4 +98,21 @@ a {
 
 .forgot{
     padding: 5px 0 25px;
+}
+
+/* ----------- sign-in and forgot password style ----------- */
+.style-form{
+    margin-bottom: 10px;
+    input{
+        height: 42px;
+        border-radius: 5px;
+        border-color: orange;
+        font-size: 18px;
+    }
+}
+
+.log{
+    position: absolute;
+    left: 15px;
+    top: 10px;
 }

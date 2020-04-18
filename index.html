@@ -6,27 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="img/GameLink_icon_68x68.png" type="image/x-png"/>    
     <link rel="stylesheet" href="style/compiler/bootstrap.css">
-    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/solid.css">
     <link rel="stylesheet" href="style/css/style.css">
+    <script src="node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="scripts/scripts.js"></script>
     <title>GameLink</title>
 </head>
 <body>    
     <header><!-- header start -->
         <nav><!-- nav start -->
-
             <div class="navbar navbar-expand-lg navbar-dark bg-dark"><!-- main navbar start -->
                 <div class="container-sm-fluid container-md"><!-- nav-container start -->
-
                     <a href="index.html" class="navbar-brand"><img src="img/GameLink_icon_68x68.png" class="mb-1" style="width: 48px; height: 48px;" alt=""> GameLink</a>
                     
                     <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarPrincipal" aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Toggle navgation">                        
                         <span class="navbar-toggler-icon"></span>
                     </button>
-
                     <div class="collapse navbar-collapse" id="navbarPrincipal"><!-- collapse start-->
-
                         <ul class="navbar-nav mr-auto">
-
                             <li class="nav-item">
                                 <a href="#" class="nav-link bg-dark text-white">NOVIDADES</a>
                             </li>                                
@@ -40,7 +40,6 @@
                                 <a href="#" class="nav-link bg-dark text-white">LOGIN</a>
                             </li>                                
                         </ul>    
-
                         <form class="form-inline my-2 my-lg-0">                                                            
                             <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search">
                             <button class="btn btn-outline-warning my-2 my-sm-0 mr-sm-2" type="submit">
@@ -51,7 +50,7 @@
                         
                         <div class="dropdown">                                
                             <button class="btn btn-outline-warning d-none d-lg-block type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="far fa-user-circle" style="font-size: 16px;"></i>
+                                <i class="fas fa-user" style="font-size: 16px;"></i>
                             </button>
                             <div class="dropdown-menu">
                                 <form class="px-4 py-3">
@@ -80,19 +79,16 @@
                                     </a>
                                 </form>
                                 <div class="dropdown-divider"></div>
-
                                 <!-- forgot password and singup -->
                                 <a href="#" class="dropdown-item">Não tem cadastro?</a>
                                 <div class="dropdown-divider"></div>
                                 <a href="#" class="dropdown-item">Esqueceu sua senha?</a>
                                 <!-- forgot password and singup -->
-
                             </div>
                         </div>
                         
                 </div><!-- nav-container end -->
             </div><!-- main navbar end -->
-
             <div class="container navbar pl-5 py-1 navbar-expand-lg d-sm-none d-lg-block"><!-- Sub navbar start -->
                 <ul class="navbar-nav text-dark">
                     <li class="nav-item">
@@ -125,24 +121,19 @@
                     
                 </ul>
             </div><!-- Sub navbar end --> 
-            
         </nav><!-- nav end -->      
         <img src="img/background.jpg" alt="background image" style="width: 100%; height: auto; position: absolute;">
     </header><!-- header end -->
-
-
     <main><!-- main start -->
         
         <div class="container-sm-fluid mt-sm-3 container-md mt-md-3"><!-- container carousel start -->
             <div class="carousel slide" data-ride="carousel" id="carouselPrincipal"><!-- carousel start -->            
-
                 <ol class="carousel-indicators">
                     <li data-target="#carouselPrincipal" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselPrincipal" data-slide-to="1"></li>
                     <li data-target="#carouselPrincipal" data-slide-to="2"></li>
                     <li data-target="#carouselPrincipal" data-slide-to="3"></li>
                 </ol>
-
                 <!-- resolução das imagens usadas no carousel 1200px x 600px -->            
                 <div class="carousel-inner rounded-lg">
                     <div class="carousel-item active">
@@ -174,28 +165,20 @@
                         </div>
                     </div>
                 </div>
-
                 <a href="#carouselPrincipal" class="carousel-control-prev" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Anterior</span>
                 </a>
-
                 <a href="#carouselPrincipal" class="carousel-control-next" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Proximo</span>
                 </a>
-
             </div><!-- carousel end -->    
         </div><!-- container carousel end -->   
-
         <div class="container-sm-fluid mt-sm-3 container-md"><!-- container / conteudo principal start -->
-
             <div class="row"><!-- row-principal start -->
-
                 <div class="col-sm-12 col-lg-8">
-
                     <h2 class="my-3">NOVIDADES</h2><!-- a cada 3 noticias pequenas uma noticia grande -->
-
                     <div class="verticalNews"><!-- verticalNews start -->
                         <!-- fazer redimencionamento das img com sass ou APIs de JS -->
                         <article class="noticias-vertical">
@@ -223,7 +206,6 @@
                                 </div>
                             </div>                    
                         </article>
-
                         <article class="noticias-vertical">
                             <div class="row">
                                 <div class="col-12">
@@ -236,7 +218,6 @@
                                 </div>
                             </div>                    
                         </article>
-
                         <article class="big-news-vertical-item">
                             <div class="row">
                                 <div class="col-12">
@@ -246,11 +227,8 @@
                                 </div>
                             </div>
                         </article>
-
                     </div><!-- verticalNews end -->
-
                 </div>
-
                 <div class="col-sm-12 col-lg-4 aside">
                     <aside>
                         
@@ -261,7 +239,6 @@
                             <a href="#" class="list-group-item list-group-item-action list-group-item-dark"><i class="fas fa-desktop"></i> PC</a>
                             <a href="#" class="list-group-item list-group-item-action list-group-item-dark"><i class="fas fa-gamepad"></i> SWITCH</a>
                         </div>
-
                         <h2 class="my-3">MAIS LIDAS</h2>
                         <div class="row ">
                             <div class="col-5">
@@ -271,7 +248,6 @@
                                 <a href="#">SONY DIIVULGA NOVO LOGO DO PS5</a>
                             </div>                            
                         </div>
-
                         <div class="row ">
                             <div class="col-5">
                                 <img src="img/conteudoPrincipal/ps5-logo.jpg" class="rounded mb-3 mr-3 float-left" style="width: 100%;" height="auto">
@@ -280,7 +256,6 @@
                                 <a href="#">SONY DIIVULGA NOVO LOGO DO PS5</a>
                             </div>                            
                         </div>
-
                         <div class="row ">
                             <div class="col-5">
                                 <img src="img/conteudoPrincipal/ps5-logo.jpg" class="rounded mb-3 mr-3 float-left" style="width: 100%;" height="auto">
@@ -289,7 +264,6 @@
                                 <a href="#">SONY DIIVULGA NOVO LOGO DO PS5</a>
                             </div>                            
                         </div>
-
                         <div class="row ">
                             <div class="col-5">
                                 <img src="img/conteudoPrincipal/ps5-logo.jpg" class="rounded mb-3 mr-3 float-left" style="width: 100%;" height="auto">
@@ -298,94 +272,58 @@
                                 <a href="#">SONY DIIVULGA NOVO LOGO DO PS5</a>
                             </div>                            
                         </div>
-
                     </aside>
                 </div>
-
             </div><!-- row-principal end -->     
-
         </div><!-- container / conteudo principal end -->     
-
-        <!-- jumbotron start -->
         <img src="img/jumbotron_line.png" style="width: 100%;height: auto;" class="mt-5">
-        <div class="jumbotron jumbotron-fluid bg-dark text-light">
-
+        <div class="jumbotron jumbotron-fluid bg-dark text-light"><!-- jumbotron start -->
             <div class="container-sm-fluid mt-sm-3 container-md mt-md-3"><!-- container end -->
-
                 <h2 class="display-3"><i class="fas fa-play display-4 text-danger"></i> Videos</h2>
                 <hr class="bg-light">
-
                 <div class="row">
                     <div class="col-sm-12 col-lg-8 mb-3">
                         <div class="embed-responsive embed-responsive-16by9 rounded mb-2">
                             <iframe src="https://www.youtube.com/embed/F7G91RjVmvk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div> 
                     </div>
-
                     <div id="videoScroll" class="col-sm-12 col-lg-4">
                         <div class="navbar navbar-light bg-danger d-block rounded mb-2">
                             <h2 class="h4 text-center text-light my-0"><i class="fas fa-play text-light"></i> Outros videos</h2>
-                        </div>
-
-                        <!-- scrollspy start -->
-                        <div data-spy="scroll" data-target="#videoScroll" data-offset="0" class="videoScroll">
+                        </div>                        
+                        <div data-spy="scroll" data-target="#videoScroll" data-offset="0" class="videoScroll"><!-- scrollspy start -->
                             <div class="embed-responsive embed-responsive-16by9 rounded mb-2 mr-2">
                                 <iframe src="https://www.youtube.com/embed/_Umd_0IwP8Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>  
-    
                             <div class="embed-responsive embed-responsive-16by9 rounded mb-2">
                                 <iframe src="https://www.youtube.com/embed/P-IMQHPXvdc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>  
-    
                             <div class="embed-responsive embed-responsive-16by9 rounded mb-2">
                                 <iframe src="https://www.youtube.com/embed/qIcTM8WXFjk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>  
-    
                             <div class="embed-responsive embed-responsive-16by9 rounded mb-2">
                                 <iframe src="https://www.youtube.com/embed/zu3wZ-_IKrM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>  
-    
                             <div class="embed-responsive embed-responsive-16by9 rounded mb-2">
                                 <iframe src="https://www.youtube.com/embed/YkXG08_WVsY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>   
-                            
+                            </div>                          
                             <div class="embed-responsive embed-responsive-16by9 rounded mb-0">
                                 <iframe src="https://www.youtube.com/embed/eSIA5mOjZLQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>  
-
-                        </div>                                                         
-                        <!-- scrollspy end -->                 
+                        </div><!-- scrollspy end -->                                                               
                     </div>
-
                 </div>
-
             </div><!-- container end -->
-            
-        </div>        
-
+        </div><!-- jumbotron end -->        
     </main><!-- main end -->
-
     <footer><!-- footer start -->
-            
         <div class="container-sm-fluid mt-sm-3 container-md my-md-3 text-center">   
             <a href="index.html" class="h3 text-dark" id="glFooterLogo"><img src="img/GameLink_icon_68x68.png" class="mb-1 logoRodape" style="width: 28px; height: 28px;" alt="GameLink Logo"> GameLink</a><br>
-
-            <span>Site by Henrique dos santos</span><br>   
-
+            <span class="siteby">Site by Henrique dos santos</span><br>   
             <a href="https://github.com/henryyyk" target="_blank"><i class="fab fa-github h3 mr-1 text-dark"></i></i></a>
-
             <a href="https://www.instagram.com/_henrique.jpg" target="_blank"><i class="fab fa-instagram h3 mr-1 text-dark"></i></a>      
-            
             <a href="https://www.linkedin.com/in/ademirhenriquedossantos" target="_blank"><i class="fab fa-linkedin-in h3 mr-1 text-dark"></i></i></a>                    
         </div>
-        
     </footer><!-- footer end -->
-    
-    <!-- scripts start -->
-    <script src="node_modules/jquery/dist/jquery.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="scripts/scripts.js"></script>
-    <!-- scripts end -->
 </body>
 </html>
