@@ -37,22 +37,21 @@
                                 <a href="#" class="nav-link bg-dark text-white">SOBRE</a>
                             </li>                                    
                             <li class="nav-item d-md-block d-lg-none">
-                                <a href="#" class="nav-link bg-dark text-white">LOGIN</a>
-                            </li>                                
-                        </ul>    
+                                <a href="login.html" class="nav-link bg-dark text-white">LOGIN</a>
+                            </li>                                                           
+                        </ul>                            
                         <form class="form-inline my-2 my-lg-0">                                                            
                             <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search">
                             <button class="btn btn-outline-warning my-2 my-sm-0 mr-sm-2" type="submit">
                                 <i class="fas fa-search"></i>
                             </button> 
-                        </form>                                                
+                        </form>                                                                  
                     </div><!-- collapse end-->
-                        
                         <div class="dropdown">                                
                             <button class="btn btn-outline-warning d-none d-lg-block type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-user" style="font-size: 16px;"></i>
                             </button>
-                            <div class="dropdown-menu">
+                            <div class="dropdown-menu dropdown-menu-right">
                                 <form class="px-4 py-3">
                                     <div class="form-group">
                                         <label for="username">
@@ -89,7 +88,7 @@
                         
                 </div><!-- nav-container end -->
             </div><!-- main navbar end -->
-            <div class="container navbar pl-5 py-1 navbar-expand-lg d-sm-none d-lg-block"><!-- Sub navbar start -->
+            <div class="container navbar pl-5 py-1 navbar-expand-sm d-none d-sm-block"><!-- Sub navbar start -->
                 <ul class="navbar-nav text-dark">
                     <li class="nav-item">
                         <a href="#" class="nav-link">PS4</a>
@@ -118,7 +117,6 @@
                     <li class="nav-item">
                         <a href="#" class="nav-link">WII U</a>
                     </li>
-                    
                 </ul>
             </div><!-- Sub navbar end --> 
         </nav><!-- nav end -->      
@@ -126,7 +124,7 @@
     </header><!-- header end -->
     <main><!-- main start -->
         
-        <div class="container-sm-fluid mt-sm-3 container-md mt-md-3"><!-- container carousel start -->
+        <div class="container-sm-fluid mt-sm-3 container-md mt-md-3 mt-2"><!-- container carousel start -->
             <div class="carousel slide" data-ride="carousel" id="carouselPrincipal"><!-- carousel start -->            
                 <ol class="carousel-indicators">
                     <li data-target="#carouselPrincipal" data-slide-to="0" class="active"></li>
@@ -185,20 +183,7 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="thambImg">
-                                        <a href="#"><img src="img/conteudoPrincipal/ps5-logo.jpg" class="rounded mb-3 mr-3 float-left"></a>
-                                    </div>
-                                    <div class="thambData">
-                                        <a href="#" >Aenean fermentum iaculis turpis vel faucibus. Aliquam erat volutpat. Cras finibus vitae sapien in convallis. In imperdiet finibus neque</a>
-                                    </div>
-                                </div>
-                            </div>                    
-                        </article>
-                        
-                        <article class="noticias-vertical">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="thambImg">
-                                        <a href="#"><img src="img/conteudoPrincipal/ps5-logo.jpg" class="rounded mb-3 mr-3 float-left"></a>
+                                        <a href="#" class="link-fade"><img src="img/conteudoPrincipal/ps5-logo.jpg" class="rounded mb-3 mr-3 float-left"></a>
                                     </div>
                                     <div class="thambData">
                                         <a href="#" >Aenean fermentum iaculis turpis vel faucibus. Aliquam erat volutpat. Cras finibus vitae sapien in convallis. In imperdiet finibus neque</a>
@@ -210,7 +195,7 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="thambImg">
-                                        <a href="#"><img src="img/conteudoPrincipal/ps5-logo.jpg" class="rounded mb-3 mr-3 float-left"></a>
+                                        <a href="#" class="link-fade"><img src="img/conteudoPrincipal/ps5-logo.jpg" class="rounded mb-3 mr-3 float-left"></a>
                                     </div>
                                     <div class="thambData">
                                         <a href="#" >Aenean fermentum iaculis turpis vel faucibus. Aliquam erat volutpat. Cras finibus vitae sapien in convallis. In imperdiet finibus neque</a>
@@ -218,11 +203,23 @@
                                 </div>
                             </div>                    
                         </article>
+                        <article class="noticias-vertical">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="thambImg">
+                                        <a href="#" class="link-fade"><img src="img/conteudoPrincipal/ps5-logo.jpg" class="rounded mb-3 mr-3 float-left"></a>
+                                    </div>
+                                    <div class="thambData">
+                                        <a href="#" >Aenean fermentum iaculis turpis vel faucibus. Aliquam erat volutpat. Cras finibus vitae sapien in convallis. In imperdiet finibus neque</a>
+                                    </div>
+                                </div>
+                            </div>                    
+                        </article>                                                
                         <article class="big-news-vertical-item">
                             <div class="row">
                                 <div class="col-12">
                                     <div class="thambImg">
-                                        <a href="#"><img class="rounded mb-3" src="img/conteudoPrincipal/fifa20_hazard.jpg" style="width: 100%;height: auto;"></a>
+                                        <a href="#"><img class="rounded mb-3 link-fade" src="img/conteudoPrincipal/fifa20_hazard.jpg" style="width: 100%;height: auto;"></a>
                                     </div>
                                 </div>
                             </div>
@@ -240,38 +237,48 @@
                             <a href="#" class="list-group-item list-group-item-action list-group-item-dark"><i class="fas fa-gamepad"></i> SWITCH</a>
                         </div>
                         <h2 class="my-3">MAIS LIDAS</h2>
-                        <div class="row ">
-                            <div class="col-5">
-                                <img src="img/conteudoPrincipal/ps5-logo.jpg" class="rounded mb-3 mr-3 float-left" style="width: 100%;" height="auto">
+                        <div class="mais-lidas">
+                            <div class="row">
+                                <div class="col-6">
+                                    <a href="#" class="link-fade"><img src="img/conteudoPrincipal/ps5-logo.jpg" class="rounded mb-3 float-left" style="width: 100%;" height="auto"></a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#">SONY DIVULGA NOVO LOGO DO PS5</a>
+                                </div>                            
                             </div>
-                            <div class="col-7">
-                                <a href="#">SONY DIIVULGA NOVO LOGO DO PS5</a>
-                            </div>                            
-                        </div>
-                        <div class="row ">
-                            <div class="col-5">
-                                <img src="img/conteudoPrincipal/ps5-logo.jpg" class="rounded mb-3 mr-3 float-left" style="width: 100%;" height="auto">
+                            <div class="row">
+                                <div class="col-6">
+                                    <a href="#" class="link-fade"><img src="img/conteudoPrincipal/ps5-logo.jpg" class="rounded mb-3 float-left" style="width: 100%;" height="auto"></a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#">SONY DIVULGA NOVO LOGO DO PS5</a>
+                                </div>                            
                             </div>
-                            <div class="col-7">
-                                <a href="#">SONY DIIVULGA NOVO LOGO DO PS5</a>
-                            </div>                            
-                        </div>
-                        <div class="row ">
-                            <div class="col-5">
-                                <img src="img/conteudoPrincipal/ps5-logo.jpg" class="rounded mb-3 mr-3 float-left" style="width: 100%;" height="auto">
+                            <div class="row">
+                                <div class="col-6">
+                                    <a href="#" class="link-fade"><img src="img/conteudoPrincipal/ps5-logo.jpg" class="rounded mb-3 float-left" style="width: 100%;" height="auto"></a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#">SONY DIVULGA NOVO LOGO DO PS5</a>
+                                </div>                            
                             </div>
-                            <div class="col-7">
-                                <a href="#">SONY DIIVULGA NOVO LOGO DO PS5</a>
-                            </div>                            
-                        </div>
-                        <div class="row ">
-                            <div class="col-5">
-                                <img src="img/conteudoPrincipal/ps5-logo.jpg" class="rounded mb-3 mr-3 float-left" style="width: 100%;" height="auto">
+                            <div class="row">
+                                <div class="col-6">
+                                    <a href="#" class="link-fade"><img src="img/conteudoPrincipal/ps5-logo.jpg" class="rounded mb-3 float-left" style="width: 100%;" height="auto"></a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#">SONY DIVULGA NOVO LOGO DO PS5</a>
+                                </div>                            
                             </div>
-                            <div class="col-7">
-                                <a href="#">SONY DIIVULGA NOVO LOGO DO PS5</a>
+                            <div class="row">
+                                <div class="col-6">
+                                    <a href="#" class="link-fade"><img src="img/conteudoPrincipal/ps5-logo.jpg" class="rounded mb-3 float-left" style="width: 100%;" height="auto"></a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#">SONY DIVULGA NOVO LOGO DO PS5</a>
+                                </div>                            
                             </div>                            
-                        </div>
+                        </div>                        
                     </aside>
                 </div>
             </div><!-- row-principal end -->     
@@ -317,12 +324,12 @@
         </div><!-- jumbotron end -->        
     </main><!-- main end -->
     <footer><!-- footer start -->
-        <div class="container-sm-fluid mt-sm-3 container-md my-md-3 text-center">   
-            <a href="index.html" class="h3 text-dark" id="glFooterLogo"><img src="img/GameLink_icon_68x68.png" class="mb-1 logoRodape" style="width: 28px; height: 28px;" alt="GameLink Logo"> GameLink</a><br>
-            <span class="siteby">Site by Henrique dos santos</span><br>   
+        <div class="container-sm-fluid mt-sm-3 container-md my-md-3">   
             <a href="https://github.com/henryyyk" target="_blank"><i class="fab fa-github h3 mr-1 text-dark"></i></i></a>
             <a href="https://www.instagram.com/_henrique.jpg" target="_blank"><i class="fab fa-instagram h3 mr-1 text-dark"></i></a>      
-            <a href="https://www.linkedin.com/in/ademirhenriquedossantos" target="_blank"><i class="fab fa-linkedin-in h3 mr-1 text-dark"></i></i></a>                    
+            <a href="https://www.linkedin.com/in/ademirhenriquedossantos" target="_blank"><i class="fab fa-linkedin-in h3 mr-1 text-dark"></i></i></a><br>
+            <a href="index.html" class="h3 text-dark" id="glFooterLogo"><img src="img/GameLink_icon_68x68.png" class="mb-1 logoRodape" style="width: 28px; height: 28px;" alt="GameLink Logo"> GameLink</a><br>
+            <span class="siteby">Site by Henrique dos santos</span><br>                                   
         </div>
     </footer><!-- footer end -->
 </body>

@@ -1,80 +1,69 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
-/* ----------- index.html style ----------- */
 body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
-
-.videoScroll {
+body a {
+  transition: 0.2s;
+}
+body a:hover {
+  transition: 0.2s;
+}
+body .videoScroll {
   position: relative;
   overflow: auto;
   height: 360px;
   width: 100%;
 }
-
-#glFooterLogo {
+body #glFooterLogo {
   filter: grayscale(1);
   transition: 0.2s;
 }
-#glFooterLogo:hover {
+body #glFooterLogo:hover {
   transition: 0.2s;
   filter: grayscale(0);
 }
-
-a {
-  transition: 0.2s;
-}
-a:hover {
-  transition: 0.2s;
-}
-
-.siteby {
+body .siteby {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
-/* ----------- login style ----------- */
 .login-page {
   background: url(../../img/login_page_wallpaper.jpg) no-repeat center center fixed;
   background-size: cover;
 }
-
-.main-login-section {
+.login-page .main-login-section {
   margin: 0 auto;
   margin-top: 130px;
 }
-.main-login-section h1 {
+.login-page .main-login-section h1 {
   font-size: 2em;
   padding-bottom: 10px;
 }
-
-.modal-content {
+.login-page .modal-content {
   opacity: 0.95;
   padding: 0 18px;
   box-shadow: 0px 0px 3px #848484;
 }
-
-.login-gl-logo {
+.login-page .login-gl-logo {
   margin-top: -50px;
   margin-bottom: 30px;
 }
-.login-gl-logo img {
+.login-page .login-gl-logo img {
   height: 100px;
   width: 100px;
 }
-
-.login-form {
+.login-page .login-form {
   margin-bottom: 25px;
 }
-.login-form input {
+.login-page .login-form input {
   height: 42px;
   border-radius: 5px;
   border-color: orange;
   font-size: 18px;
   padding-left: 45px;
 }
-
-.login-form::before {
+.login-page .login-form::before {
   font-family: "Font Awesome 5 Free";
   content: "";
   position: absolute;
@@ -82,38 +71,119 @@ a:hover {
   left: 28px;
   padding-top: 4px;
 }
-
-.login-form:last-of-type::before {
+.login-page .login-form:last-of-type::before {
   content: "";
 }
-
-.padrão-btn {
+.login-page .padrão-btn {
   font-size: 20px;
   margin: 5px 0 25px;
   border-radius: 15px;
   padding: 7px 14px;
   border-bottom: 4px solid #ec920b;
 }
-
-.forgot {
+.login-page .forgot {
   padding: 5px 0 25px;
 }
-
-/* ----------- sign-in and forgot password style ----------- */
-.style-form {
+.login-page .style-form {
   margin-bottom: 10px;
 }
-.style-form input {
+.login-page .style-form input {
   height: 42px;
   border-radius: 5px;
   border-color: orange;
   font-size: 18px;
 }
-
-.log {
+.login-page .log {
   position: absolute;
   left: 15px;
   top: 10px;
+}
+
+.terms-body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
+.terms-body section {
+  padding: 50px;
+  background: #000;
+}
+.terms-body h1 {
+  font-size: 2.5em;
+  color: #fff;
+}
+.terms-body p {
+  font-size: 1.5em;
+  color: #fff;
+}
+.terms-body a {
+  color: orange;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.terms-body a:hover {
+  transition: 0.2s;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+#scrollPath {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+#progressbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0%, 100% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
+#progressbar::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  filter: blur(10px);
+}
+
+#progressbar::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  filter: blur(30px);
+}
+
+.link-fade {
+  opacity: 1;
+  transition: 0.2s;
+}
+.link-fade:hover {
+  opacity: 0.7;
 }
 
 /*# sourceMappingURL=style.css.map */
